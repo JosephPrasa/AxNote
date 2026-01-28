@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #ec4899;
+  /* Hot Pink (No Red) */
+  --primary-hover: #d946ef;
+  /* Orchid/Purple (Cool Tone) */
+  --text-primary: #1e293b;
+  /* Dark Slate (High Visibility) */
+  --text-secondary: #64748b;
+  /* Slate Gray */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  /* White Glass */
+  --glass-border: rgba(240, 171, 252, 0.5);
+  /* Soft Purple Border */
+  --shadow: 0 4px 6px -1px rgba(236, 72, 153, 0.1), 0 2px 4px -1px rgba(236, 72, 153, 0.06);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: var(--text-primary);
+  background-color: #fdf4ff;
+  /* Very Soft Lavender/Pink White */
+  background-image:
+    radial-gradient(at 0% 0%, rgba(244, 114, 182, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(216, 180, 254, 0.2) 0px, transparent 50%);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdf2f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f9a8d4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f472b6;
+}
+
+/* Navbar: Clean White Glass with Pink Border */
+.navbar-custom {
+  background: rgba(255, 240, 245, 0.95) !important;
+  /* Lavender Blush / Pink Mist */
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(244, 114, 182, 0.4) !important;
+  box-shadow: 0 4px 20px -5px rgba(236, 72, 153, 0.15) !important;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #334155 !important;
+  font-weight: 500;
+}
+
+.navbar-custom .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background: white !important;
+  border: 1px solid #fbcfe8 !important;
+  box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.1);
+}
+
+.dropdown-item {
+  color: #334155 !important;
+}
+
+.dropdown-item:hover {
+  background: #fdf2f8 !important;
+  /* Soft Pink */
+  color: var(--primary-color) !important;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border-color: rgba(236, 72, 153, 0.2) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(236, 72, 153, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Cards & Modals */
+.card,
+.modal-content {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(16px) !important;
+  border: 1px solid #fbcfe8 !important;
+  /* Pink Border */
+  color: var(--text-primary) !important;
+  box-shadow: 0 10px 30px -5px rgba(236, 72, 153, 0.1);
+  border-radius: 12px !important;
+}
+
+/* Specific Gradient for Modals (Floating Note) */
+.modal-content {
+  background: linear-gradient(135deg, #fff1f2 0%, #fdf4ff 100%) !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+.modal-header {
+  border-bottom: 1px solid #fbcfe8 !important;
+}
+
+.modal-title {
+  color: #831843 !important;
+  /* Deep Pink Text */
+  font-weight: 600;
+}
+
+.close {
+  color: #db2777 !important;
+}
+
+/* Form Inputs */
+.form-control {
+  background-color: #fff !important;
+  border: 1px solid #fbcfe8 !important;
+  color: #1e293b !important;
+  border-radius: 8px !important;
+  padding: 12px 15px !important;
+  transition: all 0.2s ease;
+}
+
+.form-control::placeholder {
+  color: #cbd5e1 !important;
+}
+
+.form-control:focus {
+  background-color: #fff !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.2) !important;
+  transform: translateY(0);
+}
+
+/* Buttons: Soft Pink to Purple Gradient (No Red) */
+.btn-primary {
+  background: linear-gradient(135deg, #ec4899 0%, #d946ef 100%) !important;
+  border: none !important;
+  box-shadow: 0 4px 6px -1px rgba(236, 72, 153, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px -3px rgba(217, 70, 239, 0.4);
+  background: linear-gradient(135deg, #db2777 0%, #c026d3 100%) !important;
+}
+
+/* Outline Buttons (Register) */
+.btn-outline-primary {
+  color: #ec4899 !important;
+  border-color: #ec4899 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ec4899 !important;
+  border-color: #ec4899 !important;
+  color: white !important;
+  box-shadow: 0 4px 10px -1px rgba(236, 72, 153, 0.4);
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.2) !important;
+  background-color: #ec4899 !important;
+  color: white !important;
+}
