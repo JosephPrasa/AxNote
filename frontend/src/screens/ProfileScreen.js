@@ -36,7 +36,7 @@ const ProfileScreen = () => {
         } else {
             setLoading(true);
             try {
-                const userInfo = JSON.parse(localStorage.getItem("userInfo"));
+
                 const user = { name, email, password, pic };
                 const { data } = await updateProfile(user);
 

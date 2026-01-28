@@ -7,7 +7,7 @@ import { register } from '../api/api';
 const RegisterScreen = () => {
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
-    const [pic, setPic] = useState(
+    const [pic] = useState(
         "https://ui-avatars.com/api/?name=User&background=ec4899&color=fff"
     );
     const [password, setPassword] = useState("");

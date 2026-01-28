@@ -7,7 +7,7 @@ import MyNotes from './screens/MyNotes';
 import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import ProfileScreen from './screens/ProfileScreen';
-const API = process.env.REACT_APP_API_URL || "http://localhost:5000"
+
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Badge, Card, Container, ButtonGroup } from "react-bootstrap"; // Added ButtonGroup based on common patterns
+import { Button, Badge, Card } from "react-bootstrap";
 import MainScreen from "../components/MainScreen";
 import { Link, useNavigate } from "react-router-dom";
 import { fetchNotes, deleteNote } from "../api/api";

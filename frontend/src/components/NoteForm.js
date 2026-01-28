@@ -32,7 +32,7 @@ const NoteForm = ({ show, handleClose, currentNote }) => {
             setLoading(false);
             handleClose();
         } catch (error) {
-            console.error(error);
+            // console.error(error);
             setLoading(false);
         }
     };

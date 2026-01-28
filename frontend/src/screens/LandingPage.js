@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Container, Button, Row, Col } from 'react-bootstrap';
+import { Container, Button, Row } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import './LandingPage.css';
 
