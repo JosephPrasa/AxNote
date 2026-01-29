@@ -5,11 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 
+const clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;
+console.log("Google Client ID:", clientId);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
+    <GoogleOAuthProvider clientId={clientId}>
       <App />
     </GoogleOAuthProvider>
-  </React.StrictMode>
-);
+ );

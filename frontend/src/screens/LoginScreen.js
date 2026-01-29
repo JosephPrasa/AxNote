@@ -79,7 +79,7 @@ const LoginScreen = () => {
                         Sign In
                     </Button>
                 </Form>
-                <div className="py-3" style={{ textAlign: 'center' }}>
+                <div className="py-3" style={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
                     <GoogleLogin
                         onSuccess={googleSuccess}
                         onError={() => {
@@ -87,7 +87,7 @@ const LoginScreen = () => {
                         }}
                         theme="filled_black"
                         shape="pill"
-                        width="100%"
+                        width="300"
                     />
                 </div>
                 <Row className="py-3">
