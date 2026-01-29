@@ -44,7 +44,7 @@ userSchema.methods.matchPassword = async function (enteredPassword) {
 
 userSchema.pre('save', async function (next) {
     if (!this.isModified('password') || !this.password) {
-        next();
+        return next();
     }
 
     // Only hash if password exists
