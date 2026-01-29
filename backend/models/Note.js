@@ -14,6 +14,11 @@ const noteSchema = mongoose.Schema(
             type: String,
             default: 'General',
         },
+        user: {
+            type: mongoose.Schema.Types.ObjectId,
+            required: true,
+            ref: 'User',
+        },
     },
     {
         timestamps: true,

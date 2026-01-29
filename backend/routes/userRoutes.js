@@ -200,4 +200,6 @@ router.route('/profile').post(protect, updateUserProfile).get(protect, (req, res
     });
 });
 
+router.protect = protect;
+
 module.exports = router;
